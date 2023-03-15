@@ -132,7 +132,7 @@ if uploaded_file is not None:
         plt.plot(fake_x, fit_y)
         plt.annotate(f"Kd = {kd:.2e} M", xy=(0.2, 0.5), xycoords="axes fraction")
         plt.annotate(f"hill = {hill:.2g}", xy=(0.2, 0.4), xycoords="axes fraction")
-        plt.title("37C_Phe_KDM_300-30Hz - One Site")
+        plt.title(f"{uploaded_file.name}")
         plt.xlabel("[Target], M")
         plt.ylabel("Current, nA")
         plt.xscale("log")
